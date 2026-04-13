@@ -6,37 +6,94 @@
     <style>
         body {
             font-family: Arial;
+            margin: 0;
             background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
             padding: 20px;
         }
 
-        h1 {
-            color: darkblue;
-        }
-
-        h2 {
-            color: green;
-        }
-
-        ul {
+        .card {
             background: white;
-            padding: 10px;
+            padding: 15px;
+            margin: 15px 0;
             border-radius: 10px;
         }
     </style>
-
 </head>
+
 <body>
 
+<header>
     <h1>Quick Help Guide</h1>
-    <p>Helping people find important information quickly.</p>
+    <p>Helping people find important information</p>
+</header>
 
-    <h2>Emergency Numbers</h2>
-    <ul>
-        <li>Ambulance: 108</li>
-        <li>Police: 100</li>
-        <li>Fire: 101</li>
-    </ul>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Emergency</a>
+    <a href="#">Hospitals</a>
+    <a href="#">Student Help</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Emergency Numbers</h2>
+        <ul>
+            <li>Ambulance: 108</li>
+            <li>Police: 100</li>
+            <li>Fire: 101</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Hospitals</h2>
+        <ul>
+            <li>Apollo Hospitals - Emergency Care</li>
+            <li>Government General Hospital Chennai - Public Hospital</li>
+            <li>Nearby Clinics available</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Student Help</h2>
+        <ul>
+            <li>Scholarships</li>
+            <li>Exam Tips</li>
+        </ul>
+    </div>
+<div class="card">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>Phone: 1234567890</p>
+</div>
+</div>
 
 </body>
 </html>
