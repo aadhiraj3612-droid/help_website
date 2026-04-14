@@ -42,6 +42,22 @@ button {
     border: none;
     border-radius: 5px;
 }
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .card {
+    background: #1e1e1e;
+}
+
+.dark nav {
+    background: #000;
+}
+
+.dark footer {
+    background: #000;
+}
         header {
             background-color: darkblue;
             color: white;
@@ -87,6 +103,7 @@ img {
 <body>
 <header id="home">
     <h1>⚡ Quick Help Guide</h1>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
     <p>Helping people find important information</p>
 </header>
 
@@ -110,7 +127,7 @@ img {
 
     <div class="card">
         <h2 id="hospitals">🏥 Hospitals</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124378.76632180788!2d80.2205646!3d13.046080449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d0f17206573%3A0xdb5e998d3e583921!2sApollo%20Speciality%20Hospital%20%7C%20Best%20Hospital%20in%20OMR%20Chennai!5e0!3m2!1sen!2sin!4v1776201586224!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124378.76632180788!2d80.2205646!3d13.046080449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d0f17206573%3A0xdb5e998d3e583921!2sApollo%20Speciality%20Hospital%20%7C%20Best%20Hospital%20in%20OMR%20Chennai!5e0!3m2!1sen!2sin!4v1776201586224!5m2!1sen!2sin" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <div class="image-row">
 
     <div class="image-card">
@@ -156,5 +173,10 @@ img {
 <footer>
     <p>© 2026 Quick Help Guide | Made by Shakthi</p>
 </footer>
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
 </body>
 </html>
