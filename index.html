@@ -29,6 +29,19 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
         header {
             background-color: darkblue;
             color: white;
@@ -128,8 +141,15 @@ img {
     </div>
 <div class="card">
     <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>Phone: 1234567890</p>
+   <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Message:</label><br>
+        <textarea placeholder="Type your message"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
 </div>
 </div>
 <footer>
